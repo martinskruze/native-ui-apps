@@ -11,3 +11,8 @@ gem 'sqlite3'
 gem 'standalone_migrations', github: "martinskruze/standalone-migrations"
 gem 'rake'
 gem 'dotenv'
+gem 'activerecord'
+
+group :test, :development do
+  gem 'pry'
+end
