@@ -18,4 +18,5 @@ gem 'zeitwerk'
 
 group :test, :development do
   gem 'pry'
+  gem 'standard'
 end

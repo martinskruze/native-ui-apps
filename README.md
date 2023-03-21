@@ -4,3 +4,4 @@ creation from: https://thecodest.co/blog/a-simple-ruby-application-from-scratch-
 stock api https://polygon.io/
 
 bundle exec rake db:new_migration name=create_stocks
+ bundle exec rake standard
