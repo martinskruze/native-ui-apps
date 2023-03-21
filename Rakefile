@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'dotenv'
-require 'standalone_migrations'
+require "dotenv"
+require "standalone_migrations"
 require "standard/rake"
 
 Dotenv.load
