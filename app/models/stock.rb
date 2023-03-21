@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-class Post < ActiveRecord::Base
+class Stock < ActiveRecord::Base
 end

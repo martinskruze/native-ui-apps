@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Stocker
+class StockerController
   def self.run
     puts "heeei"
   end
