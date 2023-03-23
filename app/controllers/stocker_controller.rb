@@ -2,6 +2,6 @@
 
 class StockerController
   def self.run
-    puts "heeei"
+    window("Stocker").show
   end
 end

@@ -10,6 +10,7 @@ require "erb"
 require "glimmer-dsl-libui"
 require "zeitwerk"
 
+include Glimmer
 
 loader = Zeitwerk::Loader.new
 loader.push_dir("app/models")
