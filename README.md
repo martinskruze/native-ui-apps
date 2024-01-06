@@ -5,5 +5,7 @@ stock api https://polygon.io/
 
 bundle exec rake db:new_migration name=create_stocks
 
-<!-- bundle exec rake db:new_migration name=create_trades
- bundle exec rake standard -->
+bundle exec rake db:new_migration name=create_trades
+bundle exec rake db:new_migration name=create_institution
+
+bundle exec rake standard
