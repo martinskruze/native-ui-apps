@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_18_110242) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_06_102925) do
   create_table "stocks", force: :cascade do |t|
     t.string "ticker", null: false
     t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ticker"], name: "uniq_ticker", unique: true
   end
 
+  create_table "trades", force: :cascade do |t|
+    t.datetime "execution_time", null: false
+    t.integer "stock_id"
+    t.decimal "quantity", precision: 100, scale: 10
+    t.decimal "price", precision: 6, scale: 2
+    t.string "type", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["stock_id"], name: "index_trades_on_stock_id"
+  end
+
+  add_foreign_key "trades", "stocks"
 end
